@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@drawable/app_bg">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MEDIA PLAYER"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="20dp"/>
+
+    <!-- Buttons Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/btnAudio"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="AUDIO"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:elevation="4dp"
+            android:background="@drawable/btn_outline"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@null"/>
+
+        <Space
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnVideo"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:text="VIDEO"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:letterSpacing="0.1"
+            android:elevation="4dp"
+            android:background="@drawable/btn_outline"
+            android:stateListAnimator="@null"
+            android:backgroundTint="@null"/>
+    </LinearLayout>
+
+    <!-- Video View -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="30dp">
+
+        <VideoView
+            android:id="@+id/videoView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#111111"/>
+
+        <ImageView
+            android:id="@+id/audioPlaceholder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_music"
+            android:scaleType="center"
+            android:visibility="gone"/>
+    </FrameLayout>
+
+    <!-- SeekBar -->
+
+    <com.example.mediaplayer.ArcSeekBar
+        android:id="@+id/arcSeekBar"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/txtStart"
+            android:text="0:00"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="end"
+            android:id="@+id/txtEnd"
+            android:text="0:00"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <!-- Restart -->
+        <ImageButton
+            android:id="@+id/btnRestart"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/restart"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:contentDescription="Restart"/>
+
+        <!-- Play (CENTER BIG BUTTON) -->
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginHorizontal="15dp"
+            android:background="@null"
+            android:src="@drawable/play"
+            android:scaleType="centerInside"
+            android:contentDescription="Play"/>
+
+        <!-- Pause -->
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pause"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:contentDescription="Pause"/>
+
+        <!-- Stop -->
+        <ImageButton
+            android:id="@+id/btnStop"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/stop"
+            android:background="@null"
+            android:scaleType="centerInside"
+            android:contentDescription="Stop"/>
+
+    </LinearLayout>
+
+</LinearLayout>

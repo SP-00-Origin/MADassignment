@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:alpha="0.9"
+    android:height="80dp"
+    android:viewportHeight="300"
+    android:viewportWidth="300"
+    android:width="80dp">
+
+    <!-- BLUE STOP BUTTON -->
+    <path android:pathData="M266.2,167.8c0.5,-3.6 0.7,-7.2 0.7,-10.9c0,-45 -36.5,-81.5 -81.5,-81.5c-45,0 -81.5,36.5 -81.5,81.5c0,3.4 0.2,6.7 0.6,10c21.7,-11.7 49.6,-18.8 80,-18.8C215.8,148.1 244.3,155.5 266.2,167.8z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="185" android:endY="75.4" android:startX="185" android:startY="167.8" android:type="linear">
+                <item android:color="#FF004C7A" android:offset="0" />
+                <item android:color="#FF2A709B" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <path android:pathData="M185,238.4c41.3,0 75.4,-30.8 80.7,-70.6c-21.9,-12.2 -50.4,-19.6 -81.5,-19.6c-30.4,0 -58.3,7.1 -80,18.8C109.1,207.2 143.4,238.4 185,238.4z">
+        <aapt:attr name="android:fillColor">
+            <gradient android:endX="185" android:endY="148.1" android:startX="185" android:startY="238.4" android:type="linear">
+                <item android:color="#FF006699" android:offset="0" />
+                <item android:color="#FF006496" android:offset="0.2" />
+                <item android:color="#FF025D8A" android:offset="0.4" />
+                <item android:color="#FF045277" android:offset="0.6" />
+                <item android:color="#FF06425C" android:offset="0.7" />
+                <item android:color="#FF0A2E3A" android:offset="0.9" />
+                <item android:color="#FF0C2428" android:offset="1" />
+            </gradient>
+        </aapt:attr>
+    </path>
+
+    <!-- White Stop Square -->
+    <path android:fillColor="#FFFFFF" android:pathData="M194.5,193.1h-40c-8.9,0 -16.1,-7.2 -16.1,-16.1v-40c0,-8.9 7.2,-16.1 16.1,-16.1h40c8.9,0 16.1,7.2 16.1,16.1v40C210.7,185.8 203.4,193.1 194.5,193.1z" />
+
+</vector>
+
