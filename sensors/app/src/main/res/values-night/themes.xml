@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Sensors" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@color/gradient_start</item>
+        <item name="android:navigationBarColor">@color/gradient_end</item>
+        <item name="colorPrimary">@color/text_label</item>
+        <item name="colorOnPrimary">@color/gradient_end</item>
+        <item name="colorSurface">@color/surface_card</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+    </style>
+</resources>
