@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SGallery</string>
+    <string name="images_count">%d Images</string>
+    <string name="select_folder">SELECT FOLDER</string>
+    <string name="explore_folder">EXPLORE</string>
+    <string name="back">Back</string>
+    <string name="delete">Delete</string>
+    <string name="sync_ready">Ready</string>
+    <string name="sync_syncing">Syncing</string>
+</resources>

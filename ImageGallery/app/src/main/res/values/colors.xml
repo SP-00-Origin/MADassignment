@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="accent_cyan">#2EC4D6</color>
+    <color name="accent_cyan_dark">#0D2B30</color>
+    <color name="surface_panel">#0A1115</color>
+    <color name="surface_card">#1E3138</color>
+    <color name="danger_red">#E35D6A</color>
+    <color name="danger_text">#1A0D10</color>
+    <color name="text_soft_white">#EAF7FB</color>
+</resources>
